@@ -45,13 +45,12 @@ This program is re-written for utf-8 2021/03/27
 
 usktsorkey.c: C-source file of Sanskrit Sort key generator
 sktcode.tbl: Alphabet table for Sanskrit romanization. You can modify this table in accordance to the explanation in this file.
-Readme.rtf: This file
-sktsk: Binary file executable for MacOSX
-sktsk.exe: Binary file executable for Windows System
+Readme.rtf: 
+
 
 2) Installation
 
-a) Compilation: "usktsortkey.c" does not need any special include file. If you have standard C-compiler, for example gcc, you can easilly compile it. For example, 
+a) Compilation: "sktsortkey.c" does not need any special include file. If you have standard C-compiler, for example gcc, you can easilly compile it. For example, 
 
 $ gcc -o sktsk sktsortkey.c
 
