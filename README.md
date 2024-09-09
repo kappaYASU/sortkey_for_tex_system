@@ -55,7 +55,7 @@ a) Compilation: "usktsortkey.c" does not need any special include file. If you h
 
 $ gcc -o sktsk sktsortkey.c
 
-b) Installation: Copy the executable file "usktsortkey" to "bin,"  For example
+b) Installation: Copy the executable file "sktsk" to "bin,"  For example
 
 $ sudo cp sktsk /usr/local/bin/
 
