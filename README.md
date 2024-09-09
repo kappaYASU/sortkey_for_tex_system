@@ -1,5 +1,6 @@
 # sortkey_for_tex_system
 Sanskrit Sort key generator for TeX Index System. ver 1.0(3/5/2004)
+
 Sanskrit Sort key generator for TeX Index System. for utf-8 ver 2.1(3/30/2021)
 
 
@@ -44,8 +45,8 @@ This program is re-written for utf-8 2021/03/27
 1) Files in this package
 
 usktsorkey.c: C-source file of Sanskrit Sort key generator
-sktcode.tbl: Alphabet table for Sanskrit romanization. You can modify this table in accordance to the explanation in this file.
-Readme.rtf: 
+
+sktcode.tbl: Alphabet table for Sanskrit romanization. You can modify this table in accordance to the explanation in this file. 
 
 
 2) Installation
