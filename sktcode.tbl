@@ -1,0 +1,73 @@
+%The order of Sanskrit alphabet must not be changed. 
+%The real code must be written in the following form
+%  comment(ex. long vowel "a")! code1(ex.\={a}) code2(ex. \=a) code3(ex ā)
+% "!" is key token meaning the start of real code field.
+% You must type as follows: "!"+tab+code1+tab+code2+return
+% The tab is important key for script field. You must not use
+% it at random. Besides The "#" is also key for case-sensitive.
+% If your script system is case sensitive, for example, "a" and "A" stand
+% for different alphabet ex. short and long vowel, you must type "y."
+% Its default is off.
+Is your script system case-sensitive?(y/n) #n
+% makeindex style file(xx.ist) parameters
+% you can set the following parameters
+% keyword, actual, encap, lebel (Other parameters have no relation with 
+% this case).
+% parameters must begin with "|" as follows
+%  |actual "nanndemo"
+|keyword	"\\indexentry"
+|actual	'@'
+1   short vowel "a"!	a
+2   long vowel "a"!		\={a}	\=a	ā
+3   short vowel "i"!	i
+4   long vowel "i"!		\={\i}	\={i}	\=i	ī
+5   short vowel "u"!	u
+6   long vowel	"u"!	\={u}	\=u	ū
+7   vowel "r"!				\d{r}	ṛ
+8   long vowel "r"!		\={\d{r}}	ṝ
+9   vowel "l"!				\d{l}	ḷ
+10 double vowel "e"!	e
+11 double vowel "ai"!	ai
+12 double vowel "o"!	o
+13 double vowel "au"!	au
+14 velar stop "k"!			k
+15 aspirated velar stop "kh"!	kh
+16	voiced velar stop "g"!	g
+17	aspirated voiced velar stop "gh"!	gh
+18	velar nasal "ng"!	\.{n}	ṅ
+19	palatal stop "c"!	c
+20 aspirated palatal stop "ch"!		ch
+21 voiced palatal stop "j"!	j
+22	aspirated voiced palatal stop "jh"!	jh
+23 palate nasal "~n"!	\~{n}	ñ
+24	retrofrex stop ".t"!	\d{t}	ṭ
+25 aspirated retrofrex stop ".th"!	\d{t}h	ṭh
+26 voiced retrofrex stop ".d"!	\d{d}	ḍ
+27 aspirated voiced retrofrex stop ".dh"!	\d{d}h	ḍh
+28 retrofrex nasal ".n"!	\d{n}	ṇ
+29 dental stop "t"!	t
+30 aspirated dental stop "th"!	th
+31 voiced dental stop "d"!	d
+32 aspirated voiced dental stop "dh"!	dh
+33	dental nasal "n"!	n
+34 bilabial stop "p"!	p
+35 aspirated bilabial stop "ph"!	ph
+36 voiced bilabial stop "b"!	b
+37 aspirated voiced bilabial stop "bh"!	bh
+38	bilabial nasal "m"!	m
+39	semi-vowel "y"!	y
+40 semi-vowel "r"!	r
+41 semi-vowel "l"!	l
+42 semi-vowel "v"!	v
+43 palatal sibilant "'s"!	\'{s}	ś
+44 retrofrex sibilant ".s"!	\d{s}	ṣ
+45	dental sibilant "s"!	s
+46 velar sibilant "h"!		h
+47 anusvaara ".m"!	\d{m}	\.{m}	ṃ
+48 visarga ".h"!	\d{h}	ḥ
+49 anunaasika!
+50 punctuation, space, etc., (uncoded tokens)!	:	;	.	,	 
+51 misc (uncoded tokens)!	\P	\S	k.	-$\surd$	\-	-$	--	---	-suffix
+52 misc (uncoded tokens)!	\textit	\textbf	\skt	\texttt
+53 start_uncode!	\(	(
+54 end_uncode!	\)	)
