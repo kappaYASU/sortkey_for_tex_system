@@ -53,7 +53,7 @@ sktsk.exe: Binary file executable for Windows System
 
 a) Compilation: "usktsortkey.c" does not need any special include file. If you have standard C-compiler, for example gcc, you can easilly compile it. For example, 
 
-$ gcc -o sktsk usktsortkey.c
+$ gcc -o sktsk sktsortkey.c
 
 b) Installation: Copy the executable file "usktsortkey" to "bin,"  For example
 
